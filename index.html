@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Find Github Profile</title>
+   
+   <style>
+        #submit{
+            border-radius: 10px;
+        }
+        .tag1{
+            background-color: #03a9f4;      
+        }
+        .tag2{
+            background-color: #00695c;
+        }
+        .tag3{
+            background-color: #757575;
+        }
+        .tag4{
+            background-color: #fb8c00 ;
+        }
+        .btn, .btn-large, .btn-small, .btn-floating, .btn-large, .btn-small, .btn-flat {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100vh;">
+        <div>
+            <nav >
+                <div class="nav-wrapper blue-grey darken-4" style="width: 100%;">
+                <a href="https://github.com/ayushgoyall" target="_blank" class="brand-logo center" style="width: 100%; display: flex; align-items: center; justify-content: center;"><span class="left"><i class="fab fa-github"></i> </span>Searcher</a>
+            </nav>
+        
+            <div class="container" style="padding-top: 10vh;">
+                <h4 class = "center-align">Find Github Profile</h4>
+                <form action="" id = "input-form">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field">
+                                <input type="text" id="username">
+                                <label for="userName">Enter user name...</label>
+                            </div>
+                            <form action="" id="submission-form">
+                            <div class="input-field">
+                                <button type="submit" class="btn" id="button"> Search</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+            <div class="container" id="profile">  
+                    
+            </div>
+        
+        
+            <div class="container" id = "repo">
+            </div>
+        </div>
+
+        <footer class="page-footer blue-grey darken-4">
+            <div class="container">
+            <div class="row">
+                <div class="col l4  s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://github.com/ayushgoyall" target="_blank">Github</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/ayushgoyal20/" target="_blank">LinkedIn</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="footer-copyright">
+            <div class="container">
+            © 2021 Ayush Goyal
+            <a class="grey-text text-lighten-4 right" href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=goyalayush32@gmail.com&tf=" target="_blank"> <i class="far fa-envelope"></i>  goyalayush32@gmail.com</a>
+            </div>
+            </div>
+        </footer>
+   </div>
+    
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('.tooltipped').tooltip();
+      });
+  </script>
+</body>
+</html>
